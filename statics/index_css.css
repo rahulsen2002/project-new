@@ -1,0 +1,18 @@
+.login {
+    width: 75%;
+    padding: 1.0rem;
+    padding-left: 28%;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    background: #eed00ad5;
+    color: rgb(98, 48, 36);
+    align-items: center;
+} 
+
+.buttn{
+    border-radius: 12px;
+    padding: 1.0rem;
+    color: rgb(98, 48, 36);
+
+
+}

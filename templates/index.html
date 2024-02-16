@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    
+    .login {
+    width: 75%;
+    padding: 1.0rem;
+    padding-left: 28%;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    background: #eed00ad5;
+    color: rgb(98, 48, 36);
+    align-items: center;
+} 
+
+.buttn{
+    border-radius: 12px;
+    padding: 1.0rem;
+    color: rgb(98, 48, 36);
+
+
+}
+</style>
+</head>
+<body>
+    
+    <div class="login">
+        <h1>FAKE NEWS DETECTION</h1>
+        <form class="form" action="{{ url_for('predict_datapoint')}}" method="post">
+            <textarea name="news" placeholder="news" cols="100" rows="15"></textarea>
+            <br>
+            <button class="buttn" type="submit" class="btn1">prediction</button>
+            <br>
+        </form>
+        <h2>
+            MODEL DETECTION:-  {{result}}
+        </h2>
+        
+    </div>
+
+</body>
+</html>
+
+
+
